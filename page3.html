@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Advanced Search</title>
+
+        <style>
+
+            body {
+                font-family: arial, sans-serif;
+                margin: 0px;
+                color: #222;
+            }
+
+            .head {
+                background-color: #ebebeb;
+                border-bottom: 1px solid #ebebeb;
+            }
+
+            .head .img {
+                display: block;
+                float: left;
+                clear: both;
+                padding: 10px 0 0 25px;
+            }
+
+            .head .h {
+                display: block;
+                float: left;
+                font-size: 22px;
+                font-weight: bold;
+                color: #9b1b1b;
+                margin-top: 0;
+                padding: 39px 0 0 20px;
+            }
+
+            .head .home {
+                text-align: right;
+            }
+
+            .head .home a {
+                display: inline-block;
+                padding-top: 35px;
+                padding-right: 25px;
+                font-size: 13px;
+                outline: none;
+                text-decoration: none;
+                color: #3c4043;
+            }
+
+            .label span {
+                display: block;
+                clear: both;
+                padding: 50px 0 0 50px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+                width: 16%;
+                min-width: 167px;
+                min-height: 42px;
+            }
+
+            .form {
+                padding-left: 30px;
+            }
+
+            .form label {
+                font-size: 13px;
+                display: inline-block;
+                padding-left: 20px;
+                width: 13%;
+                min-width: 167px;
+            }
+
+            .form .text-box {
+                border: 1px solid #c7c6c6;
+                border-radius: 15px;
+                width: 42%;
+                min-width: 167px;
+                min-height: 20px;
+                height: 27px;
+                padding-left: 10px;
+            }
+
+            .form .text-box:focus {
+                border: 1px solid #4040f5;
+                outline: none;
+            }
+
+            .form span {
+                color: #666;
+                font-size: 11px;
+                padding-left: 10px;
+                width: 15%;
+                min-width: 167px;
+                min-height: 20px;
+                height: 25px;
+                white-space: nowrap;
+            }
+
+            .form span span {
+                font-family: monospace;
+            }
+
+            .button {
+                padding-left: 229px;
+                min-width: 167px;
+                min-height: 30px;
+                text-align: center;
+                width: 42%;
+                display: inline-block;
+            }
+
+            .button button {
+                float: right;
+                border: 1px solid #3079ed;
+                background-color: #4d90fe;
+                text-align: center;
+                font-size: 11px;
+                color: #fff;
+                height: 30px;
+                cursor: pointer;
+            }
+
+            .button button:hover {
+                background-color: #3175e2;
+            }
+
+            .button button:focus {
+                outline: none;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <div class="head">
+
+            <div class="img">
+                <a href="index.html"><img src="Images/harvard.png" alt="Harvard Shield" width="100px"></a>
+            </div>
+
+            <div class="h">
+                Advanced Search
+            </div>
+
+            <div class="home">
+                <a href="index.html">Home</a>
+                <a href="page2.html">Images</a>
+            </div>
+
+        </div>
+        
+        <div class="label">
+            <span>Find pages with...</span>
+        </div>
+
+        <form action="https://google.com/search">
+
+            <div class="form">
+
+                <label>all these words: </label>
+                <input type="text" name="as_q" autofocus="autofocus" class="text-box">
+                <span>Type the important words:<span>dark golden retriever</span></span><br>
+                <br>
+
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq" class="text-box">
+                <span>Put exact words in quotes:<span>"golden retriever"</span></span><br>
+                <br>
+
+                <label>any of these words:</label>
+                <input type="text" name="as_oq" class="text-box">
+                <span>Type <strong>OR</strong> between all the words you want:<span>light golden OR dark golden</span> </span><br>
+                <br>
+
+                <label>none of these words:</label>
+                <input type="text" name="as_eq" class="text-box">
+                <span>Put a minus sign just before words that you don't want:<span>-labrador, -"John Rossi"</span></span><br>
+
+            </div>
+            <br>
+
+            <div class="button">
+
+                <button type="submit">Advanced Search</button>
+
+            </div>
+
+        </form>
+
+   </body>
+</html>
